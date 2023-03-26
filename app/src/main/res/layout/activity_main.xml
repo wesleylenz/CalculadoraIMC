@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ETaltura"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Digite sua altura. Ex.: 1.70"
+        android:background="@drawable/bg_redondo"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/ETpeso"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ETaltura"
+        android:hint="Digite seu peso. Ex.: 70"
+        android:background="@drawable/bg_redondo"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:background="@drawable/bg_redondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Calcular"
+        android:textSize="23sp"/>
+
+</RelativeLayout>
